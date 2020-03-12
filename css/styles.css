@@ -1,0 +1,26 @@
+html {
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  body { 
+    max-width: 100%;
+    max-height: 100%;
+  }
+  ul{
+      text-decoration: none;
+  }
+  a{
+      text-decoration: none;
+      color: white;
+  }
+.nav-prin{
+    background-color: #0264fb;
+    padding: 0;
+    margin: auto;
+}
