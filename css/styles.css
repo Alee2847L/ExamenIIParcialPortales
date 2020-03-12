@@ -1,16 +1,15 @@
 html {
-    box-sizing: border-box;
-    max-width: 100%;
-    max-height: 100%;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+  min-height: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
   body { 
-    max-width: 100%;
-    max-height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100%;
   }
   ul{
       text-decoration: none;
@@ -19,8 +18,133 @@ html {
       text-decoration: none;
       color: white;
   }
+  h2,
+  h3 {
+    text-align: center;
+  }
+  h3 {
+    color: var(--secondary);
+    font-weight: 400;
+    font-size: 1.2em;
+  }
+  @media (min-width: 900px) {
+    h3 {
+      font-size: 1.5em;
+    }
+  }
+
 .nav-prin{
     background-color: #0264fb;
-    padding: 0;
-    margin: auto;
+    padding: 1em 0;
+    position: relative;
 }
+.content{
+  padding: 1em 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content a{
+  padding: 1em;
+  display: flex;
+}
+.hero img{
+  max-width: 100px;
+}
+@media (min-width: 768px) {
+  .content{
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+  }
+  .content a{
+    display: inline;
+  }
+  .hero img{
+    max-width: 950px;
+  }
+  .contetn-hero{
+    color: white;
+  }
+}
+.hero {
+  height: 28.165em;
+  background-color: #0264fb;
+  margin-bottom: 2em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  background-color: #ffb03a;
+  padding: 1em 3em;
+  border-radius: 0.3em;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 400px;
+  border: none;
+}
+.contetn-hero{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex: 1;
+  padding-bottom: 2em;
+  color: black;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .hero{
+    border-bottom: double;
+  }
+  .contetn-hero{
+    color: white;
+  }
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0.3em;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .planes-container {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  /* 
+  Cada contenedor dentro de un contenedor flex puede
+  tener las prodiedades: flex-grow, flex-shrink y 
+  flex-basis. Estos valores se pueden asignar utilizando
+  flex: <valor-grow> <valor-shrink> <valor-basis>
+   */
+  .plan {
+  --webkit-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.65);
+  margin-bottom: 3em;
+  margin: 0 5%;
+  padding: 0;
+  flex: 1;
+  }
+}
+.plan h2{
+  color: #0264fb;
+}
+.plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
